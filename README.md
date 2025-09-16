@@ -1,69 +1,48 @@
-# 🧠 Quiz Application
+# 🧠 Quiz Application (Java, Swing, AWT)
 
-A simple and interactive **Quiz Application** designed to make learning fun! Users can attempt quizzes from multiple categories, answer questions within a time limit, and get instant feedback on their performance.
+An **interactive, desktop-based Quiz Application** built with **Java (Swing & AWT)**.  
+This app provides a timed, multiple-choice test experience with automatic evaluation, real-time score tracking, and a clean GUI — all running completely offline.
 
 ---
 
 ## 📌 Description
 
-This project is a fully responsive Quiz Application built with modern web technologies. It allows users to:
-- Select different quiz categories
-- Answer randomized questions
-- Get instant results and scores
-- Track performance and improve knowledge
+This project is a lightweight, fully offline **Quiz System** designed for desktop users.  
+It allows users to take quizzes with a strict 30-second timer per question, automatically evaluates answers, and shows real-time scores.  
 
-Perfect for students, educators, and trivia lovers!
-
----
-
-## 🎥 Demo
-
-🔗 **Live Demo:** [Click Here](https://your-deployed-link.com)
-
-![Quiz App Screenshot](./assets/screenshot.png)
+Built entirely with **Java Swing & AWT**, it delivers a smooth and responsive GUI without any external dependencies.
 
 ---
 
 ## ✨ Features
 
-- ✅ Multiple quiz categories (General Knowledge, Tech, Sports, etc.)
-- ✅ Randomized questions for every attempt
-- ✅ Timer-based quiz sessions
-- ✅ Score calculation & detailed result summary
-- ✅ Mobile-friendly & responsive design
-- ✅ Dark/Light mode support *(optional)*
-- ✅ Clean and modern UI
+- ✅ **Timed Quiz:** 30-second countdown per question for consistent pacing  
+- ✅ **Automatic Evaluation:** Instant score calculation after quiz completion  
+- ✅ **Real-Time Score Tracking:** See your score update live  
+- ✅ **Modular Question Management:** Easily add, update, or remove questions  
+- ✅ **Offline Support:** Runs without internet or external libraries  
+- ✅ **User-Friendly GUI:** Built using Java Swing & AWT for a clean desktop experience  
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Tailwind CSS  
-- **Backend:** Node.js, Express.js *(if used)*  
-- **Database:** MongoDB *(if used)*  
-- **State Management:** Redux Toolkit *(if used)*  
-- **Authentication:** Appwrite / Firebase *(if used)*  
+- **Language:** Java  
+- **GUI Toolkit:** Swing, AWT  
+- **IDE:** VSCode
 
 ---
 
-## ⚡ Installation
-
-Follow these steps to run the project locally:
+## 📂 Folder Structure
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/your-username/quiz-application.git
-
-# 2️⃣ Navigate to the project folder
-cd quiz-application
-
-# 3️⃣ Install dependencies
-npm install
-
-# 4️⃣ Start the development server
-npm run dev
-
-# 5️⃣ Open your browser at:
-http://localhost:3000
-
-
+quiz-application/
+│
+├── src/
+│   ├── Main.java             # Entry point
+│   ├── QuizFrame.java        # Main quiz GUI frame
+│   ├── QuestionManager.java  # Handles question data and management
+│   ├── TimerHandler.java     # Implements 30-sec countdown per question
+│   └── ResultScreen.java     # Displays final score
+│
+└── README.md
